@@ -1,8 +1,7 @@
 function getShippingCost(country) {
-    let option = country.toLowerCase();
     let price = 0;
     let message = "";
-    switch(option) {
+    switch(country.toLowerCase()) {
         case "china":
             price = 100;
             message = `Shipping to ${country} will cost ${price} credits`;
